@@ -7,7 +7,7 @@ export default function MovieList(params) {
             {params.trending.map(trending => {
                 return (
                     <div key={trending.id}>
-                        <Movie trending={trending} />
+                        <Movie trending={trending} commentHandler={params.commentHandler} />
                     </div>
                 )
             }

@@ -19,7 +19,7 @@ export default function Movie(params) {
           <Button variant="primary" onClick={handleShow} >add to the favorite list</Button>
         </Card.Body>
       </Card>
-<ModalMovie show={show} handleClose={handleClose} trending={params.trending} />
+<ModalMovie show={show} handleClose={handleClose} trending={params.trending} commentHandler={params.commentHandler} />
     </>
   )
 }
