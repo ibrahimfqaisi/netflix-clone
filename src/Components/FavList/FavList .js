@@ -51,7 +51,7 @@ export default function FavList(params) {
     console.log(1111, receivedData)
 
     if (response.status === 200) {
-      // alert("successfully UPDATE !!")
+      alert("successfully UPDATE && you find it in the last card")
       getFavMovie();
 
     }
