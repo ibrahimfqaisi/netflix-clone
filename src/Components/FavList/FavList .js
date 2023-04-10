@@ -95,6 +95,7 @@ async function handleDelete(id){
                       <Card.Title>{favmovie.title}</Card.Title>
                       <Card.Text>{favmovie.overviewandcomments}</Card.Text>
                      
+              
                       
         <Form>
             <Form.Group className="form" controlId="formBasicEmail">
