@@ -76,6 +76,7 @@ export default function FavList(params) {
         "Content-Type": "application/json",
       },
     })
+    
 
     if (response.status === 204) {
       getFavMovie();
