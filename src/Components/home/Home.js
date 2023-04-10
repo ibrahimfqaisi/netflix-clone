@@ -15,9 +15,21 @@ export default function Home(params) {
       console.log(3333,trendingData);
      
       setTrending(trendingData);
-      console.log(44444,trending)
+      console.log(44444,trending);}
 
-  }
+      function commentHandler(newtrending , id){
+         trending.map(trending=>{
+             if(trending.id === id){
+                 
+               trending.userComment = newtrending.userComment
+
+               console.log( "trcc",trending)
+                 return trending;
+             }else{
+                 return trending
+             }
+         })
+     }
 
   useEffect(()=>{
    getTrending();
@@ -25,7 +37,7 @@ export default function Home(params) {
  return(
    <>
     
-    <MovieList  trending={trending}  />
+    <MovieList  trending={trending} commentHandler={commentHandler}/>
     </>
  )   
     
