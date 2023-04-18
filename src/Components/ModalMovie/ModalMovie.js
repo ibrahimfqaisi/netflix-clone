@@ -16,8 +16,6 @@ export default function ModalMovie(params) {
 
 addToFavHandler(e)
     }
-
-
     async function addToFavHandler(e){
         e.preventDefault();
       
