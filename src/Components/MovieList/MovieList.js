@@ -10,6 +10,7 @@ export default function MovieList(params) {
                         <Movie trending={trending} commentHandler={params.commentHandler} />
                     </div>
                 )
+                
             }
 
 
